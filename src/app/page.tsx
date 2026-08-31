@@ -328,25 +328,31 @@ export default function Home() {
             </div>
             {/* Text Block */}
             <div className="lg:col-span-7 flex flex-col space-y-6 text-left">
+              <span className="text-[#A91D3A] font-bold text-xs uppercase tracking-widest bg-[#A91D3A]/10 px-3 py-1 rounded-full inline-block self-start">
+                SWAD DESI • ANDAZ VIDESHI
+              </span>
               <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-[#1B1B1B] leading-tight">
-                Not Your Average Chaat Counter
+                Redefining the Art of Premium Catering
               </h2>
               <p className="font-sans text-[#1B1B1B]/80 text-lg leading-relaxed">
-                We started with one simple idea — Indian street food shouldn't have to choose a side. So we built custom catering menus where papdi meets nachos, golgappa meets a shot glass, and your guests stop checking their phones because the live food counter is the most interesting thing in the room.
+                At <strong>Desi Videshi Chaat</strong>, we blend the soul of authentic Indian street food with the elegance of global culinary experiences. Our passion lies in transforming traditional flavors into extraordinary gastronomic journeys that leave a lasting impression on every guest.
               </p>
+              <blockquote className="font-heading text-base sm:text-lg italic text-[#A91D3A] border-l-4 border-[#E8871E] pl-4 font-semibold">
+                “Ghat Ghat Ke Chaat – Swad Desi, Andaz Videshi.”
+              </blockquote>
               <div className="flex flex-wrap gap-6 pt-2">
                 <div className="flex items-center space-x-2 text-sm text-[#1B1B1B]">
                   <Award className="h-5 w-5 text-[#E8871E]" />
-                  <span className="font-semibold">Premium Presentation</span>
+                  <span className="font-semibold">Bespoke Event Presentation</span>
                 </div>
                 <div className="flex items-center space-x-2 text-sm text-[#1B1B1B]">
                   <ShieldCheck className="h-5 w-5 text-[#1B998B]" />
-                  <span className="font-semibold">FSSAI Hygiene Standards</span>
+                  <span className="font-semibold">Uncompromising Quality & Hygiene</span>
                 </div>
               </div>
-              <div className="pt-4">
+              <div className="pt-2">
                 <Link href="/about" className="inline-flex items-center space-x-2 font-sans font-bold text-[#A91D3A] hover:text-[#E8871E] transition-colors group">
-                  <span>Our Story</span>
+                  <span>Read Full Brand Story</span>
                   <ArrowRight className="h-5 w-5 transform group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>

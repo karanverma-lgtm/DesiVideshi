@@ -26,7 +26,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-[#FFF8EE]/70 text-sm leading-relaxed max-w-sm">
-              Desi Videshi Chaat caters premium fusion street food for weddings, corporate events, and private celebrations across Delhi NCR — live counters, real flavors, no shortcuts.
+              Swad Desi • Andaz Videshi ✨ — Redefining the art of premium catering by blending authentic Indian street food with global culinary experiences for weddings, corporate galas, and luxury celebrations.
             </p>
             <div className="flex space-x-4 pt-2">
               <a
