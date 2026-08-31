@@ -26,7 +26,7 @@ if (typeof window !== "undefined") {
 const stats = [
   { value: 10, label: "Years Catering Events", suffix: "+" },
   { value: 500, label: "Events Served", suffix: "+" },
-  { value: 4, label: "Cities Across Delhi NCR", suffix: "" },
+  { value: 5, label: "Branches Across India", suffix: "+" },
 ];
 
 const counters = [
@@ -286,6 +286,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Pan-India Presence Map */}
+      <IndiaMap />
+
       {/* Trust Strip */}
       <section
         ref={statsContainerRef}
@@ -487,9 +490,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Pan-India Presence Map */}
-      <IndiaMap />
 
       {/* How it Works */}
       <section className="bg-[#1B1B1B] text-[#FFF8EE] py-20 lg:py-32">
