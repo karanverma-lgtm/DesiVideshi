@@ -54,10 +54,10 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <Image
-                src="/assets/logo.png"
+                src="/unnamed-Photoroom.png"
                 alt="Desi Videshi Chaat"
                 width={160}
-                height={48}
+                height={60}
                 className="h-10 sm:h-12 w-auto object-contain"
                 priority
               />

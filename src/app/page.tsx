@@ -203,6 +203,16 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
+                <div className="mb-4">
+                  <Image
+                    src="/unnamed-Photoroom.png"
+                    alt="Desi Videshi Chaat"
+                    width={240}
+                    height={180}
+                    className="h-24 sm:h-32 md:h-36 w-auto object-contain drop-shadow-sm"
+                    priority
+                  />
+                </div>
                 <span className="text-[#A91D3A] font-sans font-bold text-xs uppercase tracking-widest px-3 py-1 bg-[#A91D3A]/10 rounded-full inline-block mb-3">
                   DELHI NCR'S PREMIUM FUSION CATERING
                 </span>
