@@ -203,13 +203,13 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
               >
-                <div className="mb-4 flex justify-center lg:justify-start">
+                <div className="mb-4 flex justify-center">
                   <Image
                     src="/unnamed-Photoroom.png"
                     alt="Desi Videshi Chaat"
                     width={240}
                     height={180}
-                    className="h-24 sm:h-32 md:h-36 w-auto object-contain drop-shadow-sm mx-auto lg:mx-0"
+                    className="h-24 sm:h-32 md:h-36 w-auto object-contain drop-shadow-sm mx-auto"
                     priority
                   />
                 </div>
