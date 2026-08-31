@@ -214,7 +214,7 @@ export default function Home() {
                   />
                 </div>
                 <span className="text-[#A91D3A] font-sans font-bold text-xs uppercase tracking-widest px-3 py-1 bg-[#A91D3A]/10 rounded-full inline-block mb-3">
-                  DELHI NCR'S PREMIUM FUSION CATERING
+                  DELHI NCR'S PREMIUM FUSION CHAAT CATERING
                 </span>
                 <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-[#1B1B1B] leading-tight">
                   Where <span className="text-[#E8871E]">Desi</span> Meets{" "}
