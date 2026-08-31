@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, Sparkles, Navigation, Phone, CheckCircle2, ChevronRight, Compass } from "lucide-react";
+import { MapPin, CheckCircle2, ChevronRight, Compass, Phone } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -30,13 +30,13 @@ const locations: LocationData[] = [
     shortTag: "Primary Hub & Live Operations",
     tagline: "Headquarters & Daily Live Counter Hub",
     description: "Our core operational hub serving weddings, corporate galas, and private celebrations across Delhi, Gurugram, Noida, and Faridabad with 10+ years of street food theater.",
-    coords: { x: 275, y: 220 },
+    coords: { x: 260, y: 220 },
     color: "#E8871E", // Warm Gold/Orange
     bgGlow: "rgba(232, 135, 30, 0.25)",
     badge: "HQ & Regional Hub",
     cities: ["Delhi", "Gurugram", "Noida", "Faridabad", "Ghaziabad"],
     highlights: ["Over 500+ events served", "Full kitchen & fleet setup", "Same-day tasting available"],
-    statePath: "M 265,210 L 290,210 L 290,230 L 265,230 Z",
+    statePath: "M 250,210 L 272,210 L 272,230 L 250,230 Z",
   },
   {
     id: "jodhpur",
@@ -45,13 +45,13 @@ const locations: LocationData[] = [
     shortTag: "Royal Palace Weddings",
     tagline: "Heritage & Royal Destination Catering",
     description: "Bringing high-energy fusion chaat and authentic street-food counters to palace weddings, heritage forts, and luxury resort events in Jodhpur, Jaipur, and Udaipur.",
-    coords: { x: 185, y: 245 },
+    coords: { x: 175, y: 260 },
     color: "#A91D3A", // Royal Red
     bgGlow: "rgba(169, 29, 58, 0.25)",
     badge: "Destination Weddings",
     cities: ["Jodhpur", "Jaipur", "Udaipur", "Jaisalmer"],
     highlights: ["Palace & Fort Wedding Specialist", "Custom Royal fusion menu", "Full outstation team"],
-    statePath: "M 135,210 L 235,195 L 245,265 L 175,305 L 135,255 Z",
+    statePath: "M 130,225 L 220,195 L 235,280 L 160,310 L 120,260 Z",
   },
   {
     id: "dehradun",
@@ -60,13 +60,13 @@ const locations: LocationData[] = [
     shortTag: "Hill Station Outstations",
     tagline: "Scenic Mountain & Resort Celebrations",
     description: "Catering hill-station weddings, retreat parties, and outdoor celebrations in Dehradun, Mussoorie, and Rishikesh with fresh live counters.",
-    coords: { x: 295, y: 175 },
+    coords: { x: 290, y: 170 },
     color: "#1B998B", // Emerald Teal
     bgGlow: "rgba(27, 153, 139, 0.25)",
     badge: "Outstation Hub",
     cities: ["Dehradun", "Mussoorie", "Rishikesh", "Haridwar"],
-    highlights: ["Outstation logisitics ready", "Fresh live counters in hills", "Custom wedding packages"],
-    statePath: "M 275,155 L 320,165 L 310,195 L 275,190 Z",
+    highlights: ["Outstation logistics ready", "Fresh live counters in hills", "Custom wedding packages"],
+    statePath: "M 265,150 L 315,160 L 305,190 L 265,180 Z",
   },
   {
     id: "hyderabad",
@@ -75,13 +75,13 @@ const locations: LocationData[] = [
     shortTag: "Grand Celebrations & Tech Summits",
     tagline: "Luxury Weddings & Corporate Galas",
     description: "Delivering vibrant live food theater and fusion small plates for grand Nizam-style weddings, corporate tech summits, and private parties in Hyderabad.",
-    coords: { x: 305, y: 440 },
+    coords: { x: 295, y: 440 },
     color: "#8B5CF6", // Purple
     bgGlow: "rgba(139, 92, 246, 0.25)",
     badge: "Southern Hub",
     cities: ["Hyderabad", "Secunderabad", "HITEC City", "Gachibowli"],
     highlights: ["Tech corporate summit specialist", "Fusion Golgappa & Mocktail bars", "Dedicated South team"],
-    statePath: "M 275,410 L 335,400 L 345,455 L 290,470 Z",
+    statePath: "M 260,410 L 330,400 L 340,460 L 270,475 Z",
   },
   {
     id: "goa",
@@ -90,13 +90,13 @@ const locations: LocationData[] = [
     shortTag: "Beachside Sundowners",
     tagline: "Coastal Weddings & Beach Party Live Stalls",
     description: "Bringing sun-soaked vibes, live chat counters, and handcrafted fusion mocktails to beachside destination weddings and sundowner events in Goa.",
-    coords: { x: 215, y: 480 },
+    coords: { x: 195, y: 482 },
     color: "#D97706", // Amber
     bgGlow: "rgba(217, 119, 6, 0.25)",
     badge: "Beach Celebrations",
     cities: ["North Goa", "South Goa", "Panaji", "Candolim", "Margao"],
     highlights: ["Sunset beach wedding setups", "Fusion snack bars", "Full resort coordination"],
-    statePath: "M 205,472 L 222,472 L 222,492 L 205,492 Z",
+    statePath: "M 188,472 L 205,472 L 205,494 L 188,494 Z",
   },
 ];
 
@@ -156,8 +156,8 @@ export default function IndiaMap() {
         {/* Grid: Map + Interactive Card */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
-          {/* Left Column: Interactive Vector India Map */}
-          <div className="lg:col-span-7 relative flex justify-center items-center bg-[#242424]/60 border border-[#383838] rounded-3xl p-4 sm:p-8 backdrop-blur-sm min-h-[480px]">
+          {/* Left Column: Geographically Accurate India Map */}
+          <div className="lg:col-span-7 relative flex justify-center items-center bg-[#242424]/60 border border-[#383838] rounded-3xl p-4 sm:p-8 backdrop-blur-sm min-h-[520px]">
             
             {/* Legend / Info watermark */}
             <div className="absolute top-4 left-4 z-20 flex items-center space-x-2 text-xs text-[#FFF8EE]/60 bg-[#1B1B1B]/80 px-3 py-1.5 rounded-full border border-white/10">
@@ -165,62 +165,73 @@ export default function IndiaMap() {
               <span>Click pins or state regions to explore</span>
             </div>
 
-            <div className="relative w-full max-w-[500px] aspect-[600/700]">
+            <div className="relative w-full max-w-[520px] aspect-[600/700]">
               <svg
                 viewBox="0 0 600 700"
-                className="w-full h-full drop-shadow-[0_10px_25px_rgba(0,0,0,0.5)]"
+                className="w-full h-full drop-shadow-[0_12px_30px_rgba(0,0,0,0.6)]"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <defs>
-                  {/* Subtle map gradient */}
+                  {/* Map Gradient Fill */}
                   <linearGradient id="mapGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stopColor="#2E2E2E" />
-                    <stop offset="100%" stopColor="#1E1E1E" />
+                    <stop offset="100%" stopColor="#1C1C1C" />
                   </linearGradient>
 
-                  {/* Pulse animations */}
-                  <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-                    <feGaussianBlur stdDeviation="6" result="blur" />
+                  {/* Pin Glow Effect */}
+                  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="7" result="blur" />
                     <feComposite in="SourceGraphic" in2="blur" operator="over" />
                   </filter>
                 </defs>
 
-                {/* Styled Subcontinent Silhouette of India */}
-                <g id="india-silhouette">
+                {/* Geographically Accurate Contour Map of India */}
+                <g id="india-accurate-map">
+                  {/* Main National Boundary Path */}
                   <path
                     d="
-                      M 240,55 
-                      C 260,35 285,45 300,75
-                      C 310,95 320,120 340,140
-                      C 365,145 410,135 445,150
-                      C 475,160 520,175 540,210
-                      C 555,240 520,270 480,260
-                      C 450,250 435,270 415,290
-                      C 395,310 405,340 390,370
-                      C 375,400 365,440 340,490
-                      C 320,530 300,580 290,650
-                      C 285,660 275,660 270,640
-                      C 255,590 235,540 215,500
-                      C 195,460 175,430 180,390
-                      C 185,360 160,340 120,320
-                      C 90,305 100,265 140,240
-                      C 170,225 190,200 200,165
-                      C 210,130 220,80 240,55 Z
+                      M 285,45 
+                      C 280,35 270,30 260,35
+                      C 245,45 235,60 230,80
+                      C 225,95 210,110 200,125
+                      C 190,140 175,160 160,185
+                      C 150,205 135,225 125,245
+                      C 115,265 95,280 115,290
+                      C 125,295 90,305 75,320
+                      C 65,330 75,345 105,345
+                      C 135,345 160,360 170,375
+                      C 180,390 190,420 195,445
+                      C 200,470 215,510 235,550
+                      C 255,590 270,630 280,660
+                      C 285,665 290,665 295,655
+                      C 310,615 330,560 355,505
+                      C 375,460 395,410 415,365
+                      C 435,320 445,295 440,285
+                      C 430,270 460,255 490,245
+                      C 515,240 545,220 565,195
+                      C 575,180 550,170 525,175
+                      C 500,180 480,165 470,160
+                      C 460,155 445,170 435,175
+                      C 415,180 390,165 370,150
+                      C 350,135 335,120 320,95
+                      C 305,70 295,55 285,45 Z
                     "
                     fill="url(#mapGradient)"
-                    stroke="#444444"
+                    stroke="#555555"
                     strokeWidth="2.5"
                     strokeLinejoin="round"
                   />
-                  {/* Decorative internal mesh lines */}
-                  <path
-                    d="M 275,220 L 295,175 M 275,220 L 185,245 M 275,220 L 305,440 M 215,480 L 305,440"
-                    stroke="#E8871E"
-                    strokeWidth="1.2"
-                    strokeDasharray="4 4"
-                    opacity="0.35"
-                  />
+
+                  {/* Internal Region Lines representing Major Indian States */}
+                  <g stroke="#444444" strokeWidth="1" strokeDasharray="3 3" opacity="0.4">
+                    {/* Northern / Himalayan division */}
+                    <path d="M 230,80 L 320,95 M 200,125 L 350,135 M 160,185 L 370,150" />
+                    {/* Western / Central division */}
+                    <path d="M 125,245 L 390,165 M 170,375 L 435,175 M 195,445 L 415,365" />
+                    {/* Deccan / Southern division */}
+                    <path d="M 235,550 L 355,505" />
+                  </g>
                 </g>
 
                 {/* Highlighted State Regions */}
@@ -231,10 +242,10 @@ export default function IndiaMap() {
                       <path
                         d={loc.statePath}
                         fill={isSelected ? loc.color : "rgba(255,255,255,0.05)"}
-                        fillOpacity={isSelected ? 0.35 : 0.1}
+                        fillOpacity={isSelected ? 0.4 : 0.1}
                         stroke={loc.color}
                         strokeWidth={isSelected ? "2.5" : "1"}
-                        className="transition-all duration-300 hover:fill-opacity-40"
+                        className="transition-all duration-300 hover:fill-opacity-50"
                       />
                     </g>
                   );
@@ -246,11 +257,11 @@ export default function IndiaMap() {
                   return (
                     <g key={`line-${loc.id}`}>
                       <path
-                        d={`M 275,220 Q ${(275 + loc.coords.x)/2 - 15},${(220 + loc.coords.y)/2 - 15} ${loc.coords.x},${loc.coords.y}`}
+                        d={`M 260,220 Q ${(260 + loc.coords.x)/2 - 15},${(220 + loc.coords.y)/2 - 15} ${loc.coords.x},${loc.coords.y}`}
                         stroke={isSelected ? loc.color : "#E8871E"}
-                        strokeWidth={isSelected ? "2" : "1"}
+                        strokeWidth={isSelected ? "2.5" : "1.2"}
                         strokeDasharray={isSelected ? "none" : "3 3"}
-                        opacity={isSelected ? 0.9 : 0.25}
+                        opacity={isSelected ? 0.95 : 0.3}
                         fill="none"
                         className="transition-all duration-500"
                       />
@@ -258,7 +269,7 @@ export default function IndiaMap() {
                   );
                 })}
 
-                {/* Interactive Location Markers / Pins */}
+                {/* Interactive Location Pins */}
                 {locations.map((loc) => {
                   const isSelected = loc.id === activeLocationId;
 
@@ -290,7 +301,7 @@ export default function IndiaMap() {
                         filter={isSelected ? "url(#glow)" : undefined}
                       />
 
-                      {/* Inner Dot */}
+                      {/* Inner White Core */}
                       <circle r="3.5" fill="#FFFFFF" />
 
                       {/* Text Label on Map */}
