@@ -16,6 +16,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import IndiaMap from "@/components/IndiaMap";
 
 // Register GSAP ScrollTrigger plugin
 if (typeof window !== "undefined") {
@@ -486,6 +487,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Pan-India Presence Map */}
+      <IndiaMap />
 
       {/* How it Works */}
       <section className="bg-[#1B1B1B] text-[#FFF8EE] py-20 lg:py-32">
