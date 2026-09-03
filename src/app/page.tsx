@@ -228,7 +228,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                Live chaat counters, fusion small plates, and street-food theatre — catered for weddings, corporate events, and everything worth celebrating.
+                Authentic Street Food of India | Traditional Indian Chaat | Fusion Chaat | International Cuisines | Live Culinary Experiences for Weddings, Luxury Celebrations & Corporate Events.
               </motion.p>
 
               <motion.div
@@ -262,7 +262,7 @@ export default function Home() {
                 transition={{ duration: 1 }}
               >
                 <video
-                  src="/assets/VIDEO-2026-06-25-15-11-22.mp4"
+                  src="/dc8bc925-d9ab-4ceb-a0ea-57bf80214052.mp4"
                   autoPlay
                   loop
                   muted
