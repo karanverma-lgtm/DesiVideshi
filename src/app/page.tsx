@@ -223,10 +223,23 @@ export default function Home() {
               </motion.div>
 
               <motion.p
-                className="font-sans text-[#1B1B1B]/80 text-lg sm:text-xl leading-relaxed max-w-xl"
+                className="font-sans text-[#1B1B1B]/90 text-lg sm:text-xl font-medium leading-relaxed max-w-xl"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
+              >
+                From Delhi’s Streets to Destination Weddings Across India….
+                <br />
+                <span className="text-[#A91D3A] font-semibold text-base sm:text-lg">
+                  New Delhi | Goa | Dehradun | Hyderabad | Jodhpur
+                </span>
+              </motion.p>
+
+              <motion.p
+                className="font-sans text-[#1B1B1B]/80 text-base sm:text-lg leading-relaxed max-w-xl"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
               >
                 Authentic Street Food of India | Traditional Indian Chaat | Fusion Chaat | International Cuisines | Live Culinary Experiences for Weddings, Luxury Celebrations & Corporate Events.
               </motion.p>
